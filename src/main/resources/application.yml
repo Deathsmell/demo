@@ -1,0 +1,23 @@
+
+server:
+  port: 8010
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 7727ww7727
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+
+
+  freemarker:
+    expose-request-attributes: false
+    suffix: .ftl
+
